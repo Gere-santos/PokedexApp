@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
+
     android:layout_marginTop="20dp"
     android:layout_marginBottom="30dp"
     android:orientation="vertical"
@@ -12,9 +12,10 @@
 
 
     <LinearLayout
-        android:layout_width="326dp"
-        android:layout_height="342dp"
-        android:orientation="vertical">
+        android:layout_width="158dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="6dp">
 
         <TextView
             android:id="@+id/textName"
@@ -43,14 +44,14 @@
 
         <ImageView
             android:id="@+id/imagePokemon"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="144dp"
+            android:layout_height="131dp"
             android:layout_gravity="center"
             android:contentDescription="PokemonImage"
+            android:src="@drawable/charmander"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-             />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,11 +61,13 @@
 
             <TextView
                 android:id="@+id/textNameType1"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:background="@drawable/button_radius"
                 android:backgroundTint="#fd7d24"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:text="Fire"
                 android:textAlignment="center"
                 android:textColor="#ffffff"
@@ -75,12 +78,14 @@
 
             <TextView
                 android:id="@+id/textNameType2"
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_radius"
                 android:backgroundTint="@color/purple_200"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:text="power"
                 android:textAlignment="center"
                 android:textSize="16sp" />
